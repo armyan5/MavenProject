@@ -25,5 +25,30 @@ public class HomePage extends BasePage {
         return this;
     }
 
+    @FindBy(xpath = "//*[@href='/dropdown']")
+    WebElement dropDown;
+
+    public HomePage clickOfDropDown() {
+        click(dropDown);
+        return this;
+    }
+
+    @FindBy(xpath = "//*[@href='/redirector']")
+    WebElement redirector;
+
+    public HomePage clickOfRedirector() {
+        click(redirector);
+        return this;
+    }
+
+    @FindBy(id = "redirect")
+    WebElement here;
+
+    public HomePage clickOfHere() {
+        click(here);
+        return this;
+    }
+
+
 
 }
